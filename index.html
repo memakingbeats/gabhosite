@@ -326,6 +326,9 @@
                 margin: 20px; /* Adds space around each anchor element containing the icons */
             }
 
+            .email-icon:hover {
+                color: #0099ff; /* Change to any desired hover color */
+            }
             /* Change width for screens larger than 'lg' breakpoint */
             @media (min-width: 992px) {
                 .container.product {
@@ -590,21 +593,36 @@
                     <div
                         class="col-md-3 icons d-flex flex-column align-items-center justify-content-center my-column-padding"
                     >
-                        <i class="fab fa-whatsapp fa-2x mb-2"></i>
+                        <a href="https://wa.me/554196303085" target="_blank">
+                            <i class="fab fa-whatsapp fa-2x mb-2"></i>
+                        </a>
                         <p>WhatsApp das lojas</p>
                     </div>
                     <!-- Third Column - Phone Icon -->
                     <div
                         class="col-md-3 icons d-flex flex-column align-items-center justify-content-center my-column-padding"
                     >
-                        <i class="fas fa-phone-alt fa-2x mb-2"></i>
-                        <p>Televendas</p>
+                        <div
+                            class="col-md-3 icons d-flex flex-column align-items-center justify-content-center my-column-padding"
+                        >
+                            <a
+                                href="https://wa.me/554196303085"
+                                target="_blank"
+                            >
+                                <i class="fas fa-phone-alt fa-2x mb-2"></i>
+                            </a>
+                            <p>Televendas</p>
+                        </div>
                     </div>
                     <!-- Fourth Column - Email Icon -->
                     <div
                         class="col-md-3 icons d-flex flex-column align-items-center justify-content-center my-column-padding"
                     >
-                        <i class="fas fa-envelope fa-2x mb-2"></i>
+                        <a href="mailto:zengabho@gmail.com" target="_blank">
+                            <i
+                                class="fas fa-envelope fa-2x mb-2 email-icon"
+                            ></i>
+                        </a>
                         <p>Mensagem</p>
                     </div>
                 </div>
