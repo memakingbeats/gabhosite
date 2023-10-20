@@ -501,7 +501,14 @@ footer .contato h4{
                 text-align: justify;
                 font-size: 20px;
             }
-           
+            footer .contato .icons{
+                letter-spacing: 17px;
+                margin-bottom: 0px;
+                color: lightgrey;
+                text-align: justify;
+                font-size: 20px;
+            }
+
 }
 
 
