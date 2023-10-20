@@ -25,7 +25,7 @@
             body {
                 font-family: "Montserrat", sans-serif;
                 font-weight: 300; /* Use font-weight 300 for a lighter style */
-                background-color: rgb(36, 39, 38) !important;
+                background-color: lightgray;
                 font-style: normal;
                 margin: 0;
                 padding: 0;
@@ -42,10 +42,10 @@
             }
 
             /* Add custom CSS to make the navbar transparent */
-            .navbar {
+            .container .navbar {
                 position: absolute;
                 width: 100%;
-                background-color: transparent;
+
                 z-index: 1;
             }
 
@@ -66,11 +66,11 @@
                 font-size: 16px;
                 text-align: center;
 
-                color: lightgray;
+                color: rgb(0, 0, 0);
             }
 
             .fa-bars {
-                color: lightgrey;
+                color: rgb(36, 39, 38);
             }
 
             /* Logo on the left */
@@ -108,7 +108,7 @@
                 left: 50%;
                 transform: translate(-50%, -50%);
                 text-align: center;
-                color: lightgrey;
+                color: rgb(36, 39, 38);
             }
 
             .text-overlay h1 {
@@ -160,6 +160,19 @@
                 height: 140px;
             }
 
+            /* Change the color of the carousel indicators */
+            .carousel-indicators li {
+                background-color: rgb(
+                    28,
+                    23,
+                    43
+                ); /* Change to the desired color */
+            }
+
+            /* Change the color of the carousel previous and next arrows */
+            .carousel-control-prev {
+                color: rgb(36, 39, 38);
+            }
             .logo {
                 width: 12%; /* Adjust width as per requirement */
                 margin: 0 2rem 0 2rem;
@@ -168,7 +181,7 @@
             /* SOBRE SECTION */
 
             .container .sobre {
-                background-color: rgb(25, 27, 26);
+                background-color: lightgray;
                 margin-top: 0px;
                 padding: 2rem;
             }
@@ -183,6 +196,7 @@
                 width: 500px;
                 margin-top: -80px;
                 margin-bottom: -80px;
+                margin-top: 1rem;
             }
             .container .row .par1 {
                 font-size: 20px;
@@ -194,6 +208,16 @@
                 margin-bottom: 50px;
                 font-weight: 100;
                 letter-spacing: 20px;
+                margin-top: 4rem;
+                margin-left: -5rem;
+            }
+            .container .row .par3 {
+                font-size: 60px;
+                margin-bottom: 70px;
+                font-weight: 100;
+                letter-spacing: 20px;
+                margin-top: -3rem;
+                margin-left: -1rem;
             }
             .container .row .parag1 {
                 letter-spacing: 3px;
@@ -215,14 +239,14 @@
 
             .product .row2 h2 {
                 font-size: 20px;
-                color: lightgray;
+                color: rgb(36, 39, 38);
                 letter-spacing: 20px;
             }
 
             .product .row .parag4 {
                 letter-spacing: 3px;
                 text-align: justify;
-                color: lightgray;
+                color: rgb(36, 39, 38);
             }
 
             .product img {
@@ -237,7 +261,7 @@
                 opacity: 1;
             }
 
-            /*  
+            /*
 
 
             .carousel-inner {
@@ -268,20 +292,20 @@
             footer .contato h4 {
                 letter-spacing: 20px;
                 margin-bottom: 0px;
-                color: lightgrey;
+                color: rgb(36, 39, 38);
                 text-align: justify;
                 font-size: 20px;
             }
             footer .contato p {
                 letter-spacing: 3px;
                 margin-bottom: 0px;
-                color: lightgrey;
+                color: rgb(36, 39, 38);
                 text-align: justify;
                 font-size: 12px;
             }
 
             footer {
-                background-color: rgb(36, 39, 38) !important;
+                background-color: lightgray;
                 width: 100%;
                 padding-left: 15px;
                 padding-right: 15px;
@@ -292,12 +316,12 @@
             }
 
             .bg-color-before {
-                background-color: rgb(36, 39, 38) !important;
+                background-color: lightgray;
                 height: 50px;
             }
 
             .bg-color-after {
-                background-color: rgb(36, 39, 38) !important;
+                background-color: lightgray;
                 padding: 0px;
                 height: 50px;
             }
@@ -318,7 +342,7 @@
             .container-fluid .column-content p {
                 margin-left: 0px;
                 font-size: 10px;
-                color: lightgray;
+                color: rgb(36, 39, 38);
                 text-align: justify;
             }
 
@@ -415,14 +439,14 @@
                 }
                 .product .row2 h2 {
                     font-size: 20px;
-                    color: lightgray;
+                    color: rgb(36, 39, 38);
                     letter-spacing: 10px;
                 }
 
                 footer .contato h4 {
                     letter-spacing: 17px;
                     margin-bottom: 0px;
-                    color: lightgrey;
+                    color: rgb(36, 39, 38);
                     text-align: justify;
                     font-size: 20px;
                 }
@@ -484,13 +508,13 @@
         <div class="header-image-container">
             <img
                 id="glass1"
-                src="images/glass1.jpg"
+                src="images/oculoscapa.jpg"
                 class="d-block w-100 header-image active"
                 alt="Image 1"
             />
             <img
                 id="glass2"
-                src="images/glass2.jpg"
+                src="images/oculoscapa1.jpg"
                 class="d-block w-100 header-image"
                 alt="Image 2"
             />
@@ -594,8 +618,8 @@
             <div class="row sobre" id="sobre-section">
                 <!-- Left Div -->
                 <div class="col-md-6">
-                    <h2 class="par1" style="color: lightgray">SOBRE</h2>
-                    <p class="parag1" style="color: lightgray">
+                    <h2 class="par1" style="color: rgb(36, 39, 38)">SOBRE</h2>
+                    <p class="parag1" style="color: rgb(36, 39, 38)">
                         Desde 2012, a GABHO VISION tem sido sinônimo de
                         elegância, bem-estar e inovação no mercado ótico. Nosso
                         compromisso com a satisfação dos clientes é inabalável,
@@ -614,7 +638,7 @@
                     </p>
                     <img
                         class="img1"
-                        src="images//glass1.jpg"
+                        src="images//glass9.jpg"
                         alt="Left Image"
                     />
                 </div>
@@ -625,10 +649,13 @@
                         src="images/oculos.png"
                         alt="Right Image"
                     />
-                    <h2 class="par2" style="color: lightgray">
-                        MAIS QUE UMA ÓTICA
+                    <h2 class="par2" style="color: rgb(36, 39, 38)">
+                        MAIS QUE
                     </h2>
-                    <p class="parag2" style="color: lightgray">
+                    <h2 class="par3" style="color: rgb(36, 39, 38)">
+                        UMA ÓTICA
+                    </h2>
+                    <p class="parag2" style="color: rgb(36, 39, 38)">
                         Na GABHO VISION, somos muito mais do que uma simples
                         ótica. Somos uma loja em constante evolução,
                         adaptando-nos continuamente para atender a um público
@@ -725,9 +752,12 @@
                         class="col-md-3 icons d-flex flex-column align-items-center justify-content-center my-column-padding"
                     >
                         <a href="https://wa.me/554196303085" target="_blank">
-                            <i class="fab fa-whatsapp fa-2x mb-2"></i>
+                            <i
+                                class="fab fa-whatsapp fa-2x mb-2"
+                                style="color: rgb(36, 39, 38)"
+                            ></i>
                         </a>
-                        <p>WhatsApp</p>
+                        <p style="color: rgb(36, 39, 38)">WhatsApp</p>
                     </div>
                     <!-- Third Column - Phone Icon -->
                     <div
@@ -740,9 +770,12 @@
                                 href="https://wa.me/554196303085"
                                 target="_blank"
                             >
-                                <i class="fas fa-phone-alt fa-2x mb-2"></i>
+                                <i
+                                    class="fas fa-phone-alt fa-2x mb-2"
+                                    style="color: rgb(36, 39, 38)"
+                                ></i>
                             </a>
-                            <p>Televendas</p>
+                            <p style="color: rgb(36, 39, 38)">Televendas</p>
                         </div>
                     </div>
 
@@ -752,9 +785,10 @@
                         <a href="mailto:zengabho@gmail.com" target="_blank">
                             <i
                                 class="fas fa-envelope fa-2x mb-2 email-icon"
+                                style="color: rgb(36, 39, 38)"
                             ></i>
                         </a>
-                        <p>Mensagem</p>
+                        <p style="color: rgb(36, 39, 38)">Mensagem</p>
                     </div>
                 </div>
             </div>
@@ -798,7 +832,7 @@
                         >
                             <i
                                 class="fab fa-facebook-f fa-2x"
-                                style="color: lightgray"
+                                style="color: rgb(36, 39, 38)"
                             ></i>
                         </a>
 
@@ -809,7 +843,7 @@
                         >
                             <i
                                 class="fab fa-instagram fa-2x"
-                                style="color: lightgray"
+                                style="color: rgb(36, 39, 38)"
                             ></i>
                         </a>
                     </div>
