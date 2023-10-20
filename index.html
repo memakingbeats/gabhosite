@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="br">
+<html lang="BR">
     <head>
         <meta charset="UTF-8" />
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Gabho Vision</title>
+
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -19,372 +21,53 @@
             rel="stylesheet"
             href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         />
-
-        <style>
-            body {
-                font-family: "Montserrat", sans-serif;
-                font-weight: 300; /* Use font-weight 300 for a lighter style */
-                background-color: rgb(25, 27, 26);
-                font-style: normal;
-                margin: 0;
-                padding: 0;
-            }
-
-            html {
-                scroll-behavior: smooth;
-            }
-
-            .container {
-                background-color: rgb(49, 49, 53);
-            }
-
-            /* Add custom CSS to make the navbar transparent */
-            .navbar {
-                background-color: transparent;
-                position: absolute;
-                width: 97%;
-
-                z-index: 1;
-            }
-
-            .navbar .nav-link {
-                letter-spacing: 3px;
-            }
-
-            .navbar img {
-                width: 300px;
-                height: 50px;
-            }
-
-            /* Add custom CSS to make the navbar appear in front */
-            .navbar {
-                background-color: transparent;
-                z-index: 1;
-            }
-
-            .carousel {
-                z-index: 0;
-            }
-
-            .text-overlay {
-                width: 100%;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                text-align: center;
-                color: lightgrey;
-            }
-
-            .text-overlay h1 {
-                font-family: "Montserrat", sans-serif;
-                font-weight: 200;
-                font-size: 66px; /* You can adjust the font size as needed */
-                letter-spacing: 15px;
-            }
-
-            .header-image-container {
-                position: relative;
-                height: 53rem; /* Set your desired height */
-                overflow: hidden;
-            }
-
-            .header-image {
-                width: 100%;
-                height: auto;
-                display: block;
-            }
-            .carousel .carousel-item img {
-                width: 100px; /* Set your desired width */
-                height: auto; /* Maintain the aspect ratio */
-            }
-
-            .carousel .carousel-item {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                height: 200px; /* Set your desired height for the carousel */
-            }
-
-            .logo {
-                width: 150px; /* Adjust the width as needed for your logos */
-                height: auto; /* Maintain aspect ratio */
-                margin: 0 40px; /* Add margin for spacing between logos */
-            }
-
-            .header-image {
-                position: absolute;
-                top: 0;
-                left: 0;
-                opacity: 0;
-                transition: opacity 1s ease-in-out;
-            }
-
-            #glass1.active,
-            #glass2.active {
-                opacity: 1;
-            }
-
-            .header-image2 {
-                position: absolute;
-                top: 0;
-                left: 0;
-                opacity: 0;
-                transition: opacity 1s ease-in-out;
-            }
-
-            #glass3.active,
-            #glass4.active,
-            #glass5.active,
-            #glass6.active {
-                opacity: 1;
-            }
-
-            /* Add lines to the carousel with width centered */
-            #myCarousel::before,
-            #myCarousel::after {
-                content: "";
-                display: block;
-                height: 0.4px;
-                width: calc(100% - 200px); /* Adjust the width as needed */
-                background-color: #ffffff; /* Adjust the color as needed */
-                position: absolute;
-                top: 20px;
-                left: 100px; /* Adjust the left value to create space from the edges */
-            }
-
-            #myCarousel::after {
-                top: 180px;
-                bottom: 0;
-            }
-
-            /* Adjust the positioning as needed */
-            .carousel-inner {
-                margin-top: 2px;
-                margin-bottom: 2px;
-            }
-
-            .container .carousel {
-                background-color: rgb(25, 27, 26);
-            }
-
-            .container .sobre {
-                background-color: rgb(25, 27, 26);
-                margin-top: 100px;
-            }
-            .container .row .img1 {
-                width: 500px;
-                margin-left: 20px;
-                margin-top: 80px;
-                margin-bottom: 30px;
-            }
-
-            .container .row .img2 {
-                margin-left: 20px;
-                width: 500px;
-                margin-top: -80px;
-                margin-bottom: -80px;
-            }
-            .container .row .par1 {
-                font-size: 20px;
-                margin-bottom: 30px;
-                letter-spacing: 20px;
-            }
-            .container .row .par2 {
-                font-size: 60px;
-                margin-bottom: 50px;
-                font-weight: 100; /* Use font-weight 300 for a lighter style */
-                letter-spacing: 20px;
-            }
-            .container .row .parag1 {
-                letter-spacing: 3px;
-                margin-bottom: 0px;
-            }
-            .container .row .parag2 {
-                letter-spacing: 3px;
-                margin-bottom: 90px;
-            }
-
-            .container .row .parag3 {
-                letter-spacing: 3px;
-                margin-bottom: 20px;
-                color: lightgrey;
-            }
-
-            footer .contato,
-            .icons {
-                letter-spacing: 3px;
-                margin-bottom: 0px;
-                color: lightgrey;
-            }
-
-            .header-image2 {
-                max-height: 200%; /* Adjust this percentage as needed */
-                width: 90%;
-                margin-top: 0px;
-            }
-
-            .container .product {
-                overflow: hidden;
-            }
-            .row2 .image {
-                flex-shrink: 1;
-            }
-
-            .container .row2 h2 {
-                font-size: 20px;
-            }
-
-            .product {
-                width: auto; /* This ensures the container uses Bootstrap's default widths */
-                max-width: 100%;
-                display: flex; /* Make this a flex container */
-                justify-content: center; /* Center children horizontally */
-                align-items: center; /* Center children vertically */
-                height: 100px !important; /* Adjust this to your desired height */
-                position: relative;
-            }
-
-            .prod {
-                width: 100%; /* Ensure the row takes the full width of its parent */
-            }
-
-            .image {
-                position: relative;
-                top: -60px; /* Adjust this value to shift the image upwards as needed */
-            }
-
-            .full-width-container {
-                width: 100vw; /* 100% of the viewport width */
-                height: 300px; /* Or whatever height you want */
-                overflow: hidden; /* Ensures no horizontal scrollbars and crops the image */
-            }
-
-            .full-width-image {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-                object-position: center;
-                display: block; /* Remove any default whitespace below the image */
-            }
-
-            footer {
-                background-color: rgb(49, 49, 53);
-                width: 100%; /* Take full width of the browser window */
-                padding-left: 15px; /* Add some padding to the left */
-                padding-right: 15px; /* Add some padding to the right */
-            }
-            footer {
-                width: 100%;
-                padding: 20%; /* 20px for top and bottom, 15px for left and right */
-            }
-
-            .my-column-padding {
-                padding-top: 20px; /* Adjust as needed */
-                padding-bottom: 20px; /* Adjust as needed */
-            }
-
-            .bg-color-before {
-                background-color: rgb(25, 27, 26);
-                height: 50px; /* Adjust the height as needed */
-            }
-
-            .bg-color-after {
-                background-color: rgb(25, 27, 26);
-                padding: 0px;
-            }
-
-            /* Adjust the row to use flex and ensure columns don't overflow the .bg-color-after div */
-            .bg-color-after .row {
-                display: flex;
-                flex-wrap: nowrap; /* Prevents the columns from wrapping to the next line */
-            }
-
-            /* Ensure columns stay fixed and don't shrink or grow beyond their content */
-            .bg-color-after .col-md-4 {
-                flex: 0 0 auto;
-            }
-
-            .bg-color-after .column-content {
-                max-height: 250px; /* You can adjust this value as per your needs */
-                overflow: auto; /* Adds a scrollbar if content overflows */
-                padding: 10px 0 0 0; /* Optional: to give some inner spacing */
-            }
-
-            .column-content img {
-                width: 300px;
-                margin-left: 100px;
-            }
-
-            .column-content p {
-                font-size: 10px;
-                color: lightgray;
-                text-align: justify;
-            }
-
-            .column-content .icon-spacing {
-                margin: 20px; /* Adds space around each anchor element containing the icons */
-            }
-
-            .email-icon:hover {
-                color: #0099ff; /* Change to any desired hover color */
-            }
-            /* Change width for screens larger than 'lg' breakpoint */
-            @media (min-width: 992px) {
-                .container.product {
-                    width: 100%; /* Full width on larger screens */
-                }
-            }
-        </style>
+        <link rel="stylesheet" href="/css/style.css" />
     </head>
     <body>
-        <div class="container" style="position: relative; padding: 0">
-            <!-- Move the navbar inside the container for proper positioning -->
-            <nav
-                class="navbar navbar-expand-lg navbar-light"
-                style="
-                    position: absolute;
-                    width: 100%;
-                    background-color: transparent;
-                    z-index: 1;
-                "
-            >
+        <!-- Container nav-bar -->
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <!-- Navbar toggler (burger menu) -->
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <i class="fas fa-bars"></i>
+                    <!-- Font Awesome "bars" icon -->
+                </button>
+
                 <a class="navbar-brand" href="#">
                     <img src="images/logo3.png" alt="Gabho Vision Logo" />
                 </a>
+
                 <div
                     class="collapse navbar-collapse"
                     id="navbarSupportedContent"
                 >
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a
-                                class="nav-link"
-                                href="#sobre-section"
-                                style="color: lightgray"
-                                >Sobre Nós</a
+                            <a class="nav-link" href="#sobre-section">SOBRE</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#produtos-section"
+                                >PRODUTOS</a
                             >
                         </li>
                         <li class="nav-item">
-                            <a
-                                class="nav-link"
-                                href="#produtos-section"
-                                style="color: lightgray"
-                                >Produtos</a
-                            >
-                        </li>
-                        <li class="nav-item">
-                            <a
-                                class="nav-link"
-                                href="#contato-section"
-                                style="color: lightgray"
-                                >Contato</a
+                            <a class="nav-link" href="#contato-section"
+                                >CONTATO</a
                             >
                         </li>
                     </ul>
                 </div>
             </nav>
         </div>
+
         <div class="header-image-container">
             <img
                 id="glass1"
@@ -399,43 +82,65 @@
                 alt="Image 2"
             />
             <div class="text-overlay">
-                <h1>Beleza e Precisão. Ótica</h1>
+                <h1>Harmonia, Elegância. Ótica</h1>
             </div>
         </div>
-        <div class="container" style="position: relative; padding: 0">
+
+        <!-- ... your code before the carousel ... -->
+
+        <!-- Carousel section -->
+        <div class="container myCarousel">
             <div
                 id="myCarousel"
                 class="carousel slide"
                 data-ride="carousel"
-                data-interval="2000"
+                data-interval="5000"
             >
-                <div class="carousel-inner" style="height: 200px">
-                    <!-- Single slide with six logos -->
+                <!-- Carousel indicators -->
+                <ol class="carousel-indicators">
+                    <li
+                        data-target="#myCarousel"
+                        data-slide-to="0"
+                        class="active"
+                    ></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <!-- Add more indicators as you add more slides -->
+                </ol>
+
+                <div class="carousel-inner">
+                    <!-- First slide -->
                     <div class="carousel-item active">
-                        <!-- Logo 1 -->
-                        <img src="images//hoya.png" class="logo" alt="Logo 1" />
-                        <!-- Logo 2 -->
-                        <img src="images/zeiss.png" class="logo" alt="Logo 2" />
-                        <!-- Logo 3 -->
-                        <img
-                            src="images/varilux.png"
-                            class="logo"
-                            alt="Logo 3"
-                        />
-                        <!-- Logo 4 -->
-                        <img
-                            src="images/crizal.png"
-                            class="logo"
-                            alt="Logo 4"
-                        />
-                        <!-- Logo 5 -->
-                        <img
-                            src="images/autofokus.png"
-                            class="logo"
-                            alt="Logo 5"
-                        />
+                        <div class="d-flex justify-content-center">
+                            <img
+                                src="images/hoya.png"
+                                class="logo"
+                                alt="Logo 1"
+                            />
+                            <img
+                                src="images/zeiss.png"
+                                class="logo"
+                                alt="Logo 2"
+                            />
+                        </div>
                     </div>
+                    <!-- Second slide -->
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <img
+                                src="images/varilux.png"
+                                class="logo"
+                                alt="Logo 3"
+                            />
+                            <img
+                                src="images/crizal.png"
+                                class="logo"
+                                alt="Logo 4"
+                            />
+                        </div>
+                    </div>
+                    <!-- Add more slides as you have more logos -->
                 </div>
+
                 <!-- Carousel Controls -->
                 <a
                     class="carousel-control-prev"
@@ -457,28 +162,37 @@
                 >
                     <span
                         class="carousel-control-next-icon"
-                        ariahidden="true"
+                        aria-hidden="false"
                     ></span>
                     <span class="sr-only">Next</span>
                 </a>
             </div>
         </div>
 
-        <!-- Add this section below your carousel -->
-        <div class="container" style="position: relative; padding: 0">
+        <!-- ... rest of your code ... -->
+
+        <!-- SOBRE -->
+        <div class="container" style="position: relative">
             <div class="row sobre" id="sobre-section">
                 <!-- Left Div -->
                 <div class="col-md-6">
                     <h2 class="par1" style="color: lightgray">SOBRE</h2>
                     <p class="parag1" style="color: lightgray">
-                        Reconhecida por promover elegância e bem-estar aos seus
-                        clientes, a OCULUM é referência no mercado ótico, desde
-                        1998. Com acessórios e serviços ópticos diferenciados, a
-                        OCULUM possui lojas nos estados de Pernambuco, Ceará,
-                        Rio Grande do Norte, Paraíba, Bahia, Sergipe, Alagoas,
-                        Distrito Federal, Maranhão, Pará, Piauí, São Paulo, Mato
-                        Grosso, Mato Grosso do Sul, Minas Gerais, Paraná e
-                        Espírito Santo.
+                        Desde 2012, a GABHO VISION tem sido sinônimo de
+                        elegância, bem-estar e inovação no mercado ótico. Nosso
+                        compromisso com a satisfação dos clientes é inabalável,
+                        e é isso que nos tornou uma referência nesse setor. Com
+                        uma gama de acessórios e serviços ópticos diferenciados,
+                        estamos empenhados em elevar a sua experiência visual a
+                        um nível superior. O que nos destaca é a paixão por
+                        proporcionar qualidade a preços acessíveis, rivalizando
+                        com os padrões europeus, e oferecendo excelentes
+                        condições de pagamento. Nossa missão não é apenas
+                        fornecer óculos, mas também liderar o mundo da moda
+                        ótica. Estamos orgulhosos de lançar simultaneamente os
+                        modelos mais recentes da Europa, mantendo um rigoroso
+                        processo de seleção para garantir que cada peça seja
+                        autêntica, certificada e acompanhada de nota fiscal.
                     </p>
                     <img
                         class="img1"
@@ -497,51 +211,49 @@
                         MAIS QUE UMA ÓTICA
                     </h2>
                     <p class="parag2" style="color: lightgray">
-                        Com preços acessíveis, competitivos com o mercado
-                        europeu e ótimas condições de pagamento,a OCULUM é
-                        também referência em moda, com ofertas de lançamentos
-                        simultâneos aos da Europa, sob criteriosa seleção de
-                        modelos autênticos, com certificado de garantia e nota
-                        fiscal. Essa é a OCULUM. Mais que uma ótica. Uma loja em
-                        constante evolução para atender, sempre com excelência,
-                        um público cada vez mais exigente.
+                        Na GABHO VISION, somos muito mais do que uma simples
+                        ótica. Somos uma loja em constante evolução,
+                        adaptando-nos continuamente para atender a um público
+                        cada vez mais exigente. Acreditamos que sua visão merece
+                        apenas o melhor, e estamos comprometidos em entregar
+                        exatamente isso. Além disso, nossa abrangência não se
+                        limita às fronteiras locais. Enviamos nossos produtos
+                        para todo o país, para que você possa desfrutar da
+                        qualidade e estilo que oferecemos, não importa onde
+                        esteja. A GABHO VISION está aqui para superar as suas
+                        expectativas, porque sua visão merece o melhor e sua
+                        aparência merece o mais autêntico. Descubra conosco o
+                        mundo dos óculos e lentes, onde a excelência e a
+                        elegância se encontram. Seja parte da nossa jornada e
+                        experimente a diferença que a GABHO VISION pode fazer na
+                        sua vida."
                     </p>
                 </div>
             </div>
         </div>
 
-        <div
-            class="container product"
-            style="position: relative; padding: 290px"
-        >
+        <!-- product session -->
+        <div class="container product" style="position: relative">
             <div class="row prod" id="produtos-section">
-                <!-- Left Div with Text -->
-                <div class="col-md-6 row2 d-flex flex-column align-items-start">
+                <!-- Single Column for Text on Small Screens -->
+                <div class="col-12 col-lg-6 row2">
                     <h2 class="parag3">PRODUTOS</h2>
-                    <p
-                        class="parag3"
-                        style="
-                            display: flex;
-                            justify-content: center;
-                            width: 100%;
-                        "
-                    >
-                        Confira as novas tendências e lançamentos nacionais e
-                        internacionais na Oculum.
+                    <p class="parag4">
+                        Explore o fascinante universo das últimas tendências e
+                        dos mais recentes lançamentos na Gabho Vision.
                     </p>
                 </div>
-                <!-- Right Div with Carousel -->
+                <!-- Single Column for Carousel on Small Screens -->
                 <div
-                    class="col-md-6 image d-flex align-items-center justify-content-center"
+                    class="col-12 col-lg-6 image d-flex align-items-center justify-content-center"
                 >
                     <div>
                         <img
                             id="glass3"
-                            src="images/grau6.png"
+                            src="images/grau3.png"
                             class="d-block header-image2 active"
                             alt="Image 3"
                         />
-
                         <img
                             id="glass4"
                             src="images/grau7.png"
@@ -554,7 +266,6 @@
                             class="d-block header-image2"
                             alt="Image 3"
                         />
-
                         <img
                             id="glass6"
                             src="images/grau3.png"
@@ -566,6 +277,7 @@
             </div>
         </div>
 
+        <!-- FOTO JOJA -->
         <div class="full-width-container">
             <img
                 src="images/loja1.jpg"
@@ -574,19 +286,20 @@
             />
         </div>
 
-        <!-- HTML -->
+        <!-- BG COLOR BEFORE-->
 
         <div class="bg-color-before"></div>
 
+        <!-- FOOTER -->
         <footer class="text-light py-4">
             <div class="container-fluid">
                 <div class="row" id="contato-section">
                     <div class="col-md-3 contato">
                         <h4>CONTATO</h4>
                         <p>
-                            As facilidades na Oculum são tantas que até para
-                            entrar em contato com a gente você tem várias
-                            opções.
+                            Na Gabho Vision, oferecemos uma ampla gama de opções
+                            para facilitar o seu contato conosco, tornando sua
+                            experiência ainda mais conveniente.
                         </p>
                     </div>
                     <!-- Second Column - WhatsApp Icon -->
@@ -596,7 +309,7 @@
                         <a href="https://wa.me/554196303085" target="_blank">
                             <i class="fab fa-whatsapp fa-2x mb-2"></i>
                         </a>
-                        <p>WhatsApp das lojas</p>
+                        <p>WhatsApp</p>
                     </div>
                     <!-- Third Column - Phone Icon -->
                     <div
@@ -614,7 +327,7 @@
                             <p>Televendas</p>
                         </div>
                     </div>
-                    <!-- Fourth Column - Email Icon -->
+
                     <div
                         class="col-md-3 icons d-flex flex-column align-items-center justify-content-center my-column-padding"
                     >
@@ -629,64 +342,57 @@
             </div>
         </footer>
 
-        <div class="bg-color-after">
-            <div class="container-fluid">
-                <!-- Note the change from 'container' to 'container-fluid' -->
-                <div class="row align-items-center">
-                    <!-- First Column: Logo -->
-                    <div class="col-md-4">
-                        <div class="column-content">
-                            <!-- Place your logo image here -->
-                            <img
-                                src="images//logo3.png"
-                                alt="Your Logo"
-                                class="img-fluid"
-                            />
-                        </div>
+        <div class="bg-color-after"></div>
+        <div class="container-fluid">
+            <!-- Note the change from 'container' to 'container-fluid' -->
+            <div class="row align-items-center">
+                <!-- First Column: Logo -->
+                <div class="col-md-4">
+                    <div class="column-content">
+                        <!-- Place your logo image here -->
+                        <img
+                            src="images//logo3.png"
+                            alt="Your Logo"
+                            class="img-fluid"
+                        />
                     </div>
+                </div>
 
-                    <!-- Second Column: Rights -->
-                    <div class="col-md-4">
-                        <div class="column-content">
-                            <p>
-                                © All rights aOculum Ótica LTDA. CNPJ:
-                                08.563.066/0010-92 Av Fernando Simões Barbosa,
-                                266 salas 508 à 510 Empresarial Wecon Center VI
-                                – Boa Viagem - CEP: 51020-390 - Recife/PE
-                                Atendimento 0800-609-1124 ou 4007-2502 *custo de
-                                ligação local Copyright 2013-2015
-                                www.oculum.com.br - Todos os Direitos
-                                Reservados.reserved
-                            </p>
-                        </div>
+                <!-- Second Column: Rights -->
+                <div class="col-md-4">
+                    <div class="column-content">
+                        <p>
+                            © All rights a Gabho Vision Ótica. Todos os Direitos
+                            Reservados.reserved
+                        </p>
                     </div>
+                </div>
 
-                    <!-- Third Column: Social Media Icons -->
-                    <div class="col-md-4">
-                        <div class="column-content text-center">
-                            <!-- Icons as before -->
-                            <a
-                                href="https://www.facebook.com/profile.php?id=100090445033754"
-                                class="icon-spacing"
-                                target="_blank"
-                            >
-                                <i
-                                    class="fab fa-facebook-f fa-2x"
-                                    style="color: lightgray"
-                                ></i>
-                            </a>
+                <!-- Third Column: Social Media Icons -->
+                <div class="col-md-4">
+                    <div class="column-content fcIcon text-center">
+                        <!-- Icons as before -->
+                        <a
+                            href="https://www.facebook.com/profile.php?id=100090445033754"
+                            class="icon-spacing"
+                            target="_blank"
+                        >
+                            <i
+                                class="fab fa-facebook-f fa-2x"
+                                style="color: lightgray"
+                            ></i>
+                        </a>
 
-                            <a
-                                href="https://www.instagram.com/gabriel.gabho/"
-                                class="icon-spacing"
-                                target="_blank"
-                            >
-                                <i
-                                    class="fab fa-instagram fa-2x"
-                                    style="color: lightgray"
-                                ></i>
-                            </a>
-                        </div>
+                        <a
+                            href="https://www.instagram.com/gabriel.gabho/"
+                            class="icon-spacing"
+                            target="_blank"
+                        >
+                            <i
+                                class="fab fa-instagram fa-2x"
+                                style="color: lightgray"
+                            ></i>
+                        </a>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,512 @@
+            body {
+                font-family: "Montserrat", sans-serif;
+                font-weight: 300; /* Use font-weight 300 for a lighter style */
+                background-color: rgb(36, 39, 38) !important;
+                font-style: normal;
+                margin: 0;
+                padding: 0;
+            }
+
+            html {
+                scroll-behavior: smooth;
+            }
+
+            
+            
+            
+            
+            
+            /* Container - nav bar */
+            .container {
+                
+                position: relative;
+                padding: 0;
+            }
+
+            /* Add custom CSS to make the navbar transparent */
+            .navbar {
+                position: absolute;
+                    width: 100%;
+                    background-color: transparent;
+                    z-index: 1;
+                    
+            }
+
+
+            .navbar-toggler {
+                position: absolute;
+                right: 0;
+                z-index: 3;
+            }
+
+
+            .navbar-collapse {
+                position: absolute;
+                top: 20px;  /* adjust based on the height of your navbar */
+                left: 0;
+                width: 100%;
+                z-index: 2;
+                
+                
+            }
+            .navbar-collapse .navbar-nav .nav-link{
+        font-size: 16px;
+        text-align: center;
+        
+        color: lightgray
+        
+        
+    }
+
+            .fa-bars {
+                color: lightgrey;
+
+            }
+
+
+
+            /* Logo on the left */
+            .navbar-brand {
+                margin-right: auto; /* pushes everything else to the right */
+            }
+
+           /* Add this CSS to change the color of nav-link on hover */
+
+
+            .navbar .nav-link {
+                letter-spacing: 5px;
+               
+            }
+            /* Add this CSS to change the font size and color on hover */
+.navbar-nav .nav-link {
+    transition: transform 0.2s ease, color 0.2s ease; /* Add smooth transitions */
+}
+
+.navbar-nav .nav-link:hover {
+    transform: scale(1.1); /* Increase font size on hover */
+    color: rgb(146, 68, 0) !important; /* Change the color to your desired hover color */
+}
+            .navbar img {
+                width: 300px;
+                height: 50px;
+            }
+
+ 
+            .text-overlay {
+                width: 100%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+                color: lightgrey;
+            }
+
+            .text-overlay h1 {
+                font-family: "Montserrat", sans-serif;
+                font-weight: 200;
+                font-size: 66px; /* You can adjust the font size as needed */
+                letter-spacing: 15px;
+            }
+
+            .header-image-container {
+                position: relative;
+                height: 53rem; /* Set your desired height */
+                overflow: hidden;
+            }
+
+            #glass1.active,
+            #glass2.active {
+                opacity: 1;
+            }
+
+            .header-image2 {
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                transition: opacity 1s ease-in-out;
+            }
+
+     
+            .header-image {
+                width: 100%;
+                height: auto;
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                transition: opacity 1s ease-in-out;
+            }
+
+
+
+
+
+
+
+
+                /* CAROUSEL MARCAS */
+
+            .myCarousel{
+                position: relative;
+                
+                
+            }
+
+
+            .carousel .carousel-item {
+                
+                align-items: center;
+                justify-content: center;
+                height: 140px; 
+            }
+
+            .logo {
+           
+                width: 12%; /* Adjust width as per requirement */
+    
+                }
+            
+
+
+
+
+
+
+            /* SOBRE SECTION */
+
+                .container .sobre {
+                background-color: rgb(25, 27, 26);
+                margin-top: 0px;
+                padding: 2rem;
+                
+            }
+            .container .row .img1 {
+                width: 500px;
+                
+                margin-top: 80px;
+                margin-bottom: 30px;
+            }
+
+            .container .row .img2 {
+                
+                width: 500px;
+                margin-top: -80px;
+                margin-bottom: -80px;
+            }
+            .container .row .par1 {
+                font-size: 20px;
+                margin-bottom: 30px;
+                letter-spacing: 20px;
+            }
+            .container .row .par2 {
+                font-size: 60px;
+                margin-bottom: 50px;
+                font-weight: 100; 
+                letter-spacing: 20px;
+            }
+            .container .row .parag1 {
+                letter-spacing: 3px;
+                margin-bottom: 0px;
+            }
+            .container .row .parag2 {
+                letter-spacing: 3px;
+                margin-bottom: 90px;
+            }
+
+
+
+
+
+
+            /* PRODUCT SECTION */
+
+            .product {    
+                margin-top: 3rem;            
+                padding: 50px;
+                justify-content: center; 
+                align-items: center;                
+                
+                
+            }
+
+            
+            
+            .product .row2 h2  {
+                font-size: 20px;
+                color: lightgray;
+                letter-spacing: 20px;
+                
+                
+            }
+            
+
+            .product .row .parag4 {
+                letter-spacing: 3px;
+                text-align: justify;
+                color: lightgray;
+                
+                
+            }
+
+            .product img{
+                margin-top: -5rem;
+                width: 100%;
+                
+            }
+
+            
+
+            #glass3.active,
+            #glass4.active,
+            #glass5.active,
+            #glass6.active {
+                opacity: 1;
+            }
+
+            
+        
+
+            
+            /*  
+
+
+            .carousel-inner {
+                margin-top: 2px;
+                margin-bottom: 2px;
+            }
+
+            */
+
+            /*FOTO LOJA*/
+
+            .full-width-container {
+                width: 100vw; 
+                height: 300px; 
+                overflow: hidden;
+                margin-top: 5rem; 
+            }
+
+            .full-width-image {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+                display: block; 
+            }
+
+
+
+
+            /*FOOTER*/
+            footer .contato h4{
+                letter-spacing: 20px;
+                margin-bottom: 0px;
+                color: lightgrey;
+                text-align: justify;
+                font-size: 20px;
+            }
+            footer .contato p{
+                letter-spacing: 3px;
+                margin-bottom: 0px;
+                color: lightgrey;
+                text-align: justify;
+                font-size: 12px;
+            }
+
+            footer {
+                background-color: rgb(36, 39, 38) !important;
+                width: 100%; 
+                padding-left: 15px; 
+                padding-right: 15px;
+            }
+            footer {
+                width: 100%;
+                padding: 20%; 
+            }
+
+            
+
+
+
+            .bg-color-before {
+                background-color: rgb(36, 39, 38) !important;
+                height: 50px; 
+            }
+
+            .bg-color-after {
+                background-color: rgb(36, 39, 38) !important;
+                padding: 0px;
+                height: 50px; 
+            }
+
+            
+            
+
+            .icon-spacing {
+    margin-right: 15px; /* Adjust the value as needed */
+}
+
+/* For the last icon, remove the margin to prevent extra space on the right */
+.column-content.fcIcon a:last-child .icon-spacing {
+    margin-right: 0;
+}
+    
+            .column-content img {
+                width: 300px;
+                
+            }
+
+            
+
+            .column-content p {
+                margin-left: 0px;
+                font-size: 10px;
+                color: lightgray;
+                text-align: justify;
+            }
+
+            
+
+            .email-icon:hover {
+                color: #0099ff; 
+            }
+            
+            
+
+
+
+@media (max-width: 576px) {
+    .logo-small {
+        font-size: 1.5rem; 
+    }
+
+    .container .sobre{
+     
+        width: 100vw;
+        margin-left: 0.2rem;
+    }
+    
+    .navbar img {
+        width: 150px;
+        height: 25px;
+        
+    }
+
+    .navbar-collapse .navbar-nav .nav-link{
+        font-size: 16px;
+        text-align: center;
+        
+        color: rgb(1, 0, 0);
+        background-color: rgba(211, 211, 211, 0.896);
+        font-weight: 400;
+        
+    }
+    .text-overlay {
+               margin-left: 0.5rem;
+            }
+    
+    .header-image-container{
+        height: 32rem;
+        
+        
+    }
+    .header-image-container .text-overlay h1{
+        font-size: 45px;
+        
+        margin-top: 18rem;
+
+        
+    }
+    .carousel {
+        margin-top: 3rem;
+    }
+    .carousel .carousel-item {
+                
+        height: 90px; 
+    }
+    .logo {
+        width: 22%; /* Adjust width as per requirement */
+        margin-top: 0.2rem;
+    }
+    .carousel-indicators{
+        display: none;
+    }
+
+    .navbar-collapse {
+         top: 30px;  /* adjust based on the height of your navbar */
+    }
+    .container .row .img1 {
+        display: none;
+    }
+    .container .row .img2 {
+        width: 300px;
+    }
+    .container .row .par1 {
+        font-size: 12px;
+        margin-top: 50px;
+        
+        
+    }
+    .container .row .par2 {
+        font-size: 22px;
+        margin-top: 50px;
+        
+        
+    }
+    .container .row .parag1 {
+        
+        font-size: 12px;
+        margin-top: 20px;
+        
+        
+    }
+    .container .row .parag2 {
+        
+        font-size: 12px;
+        margin-top: 20px;    
+    }
+    
+
+    .product {
+        padding: 100px;
+        margin-top: -2rem;
+        
+    }
+    .product img{
+                margin-top: 0.5rem;
+                width: 100%;
+                
+            }
+
+    .column-content img {
+                width: 100%;
+                
+
+            }
+.product .row2 h2  {
+                font-size: 20px;
+                color: lightgray;
+                letter-spacing: 10px;
+                
+                
+            }
+            
+footer .contato h4{
+                letter-spacing: 17px;
+                margin-bottom: 0px;
+                color: lightgrey;
+                text-align: justify;
+                font-size: 20px;
+            }
+           
+}
+
+
+
+
+
+
+
